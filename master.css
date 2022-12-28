@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@font-face {
+    font-family: "Poppins";
+    src: url("font/Poppins-Regular.ttf");
+}
 @keyframes fade {
     0% {
         opacity: 0%;
@@ -50,9 +53,8 @@
 * {
     box-sizing: border-box;
 }
-
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 
     background-image: url(images/bg.png);
     overflow-x: hidden;
