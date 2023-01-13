@@ -192,7 +192,7 @@ a li:visited ,h2 a  {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin-left:-22%;
+    margin-left:-20%;
 }
 .rect-blue {
     background-color: var(--mainBlue);
@@ -533,6 +533,12 @@ div h1 {
   .banner:hover .info-1:before,.banner-2:hover .info-2,.banner-3:hover .info-3 {
     transform: translateY(0) translateZ(0);
   }
+  @media screen and (max-width:800px) {
+    .banner-1, .banner-2 , .banner-3 {
+        height:20vh
+    }
+    
+  }
   
   .title {
     margin: 0;
@@ -584,6 +590,12 @@ div h1 {
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
+}
+@media screen  and (max-width:800px){
+    .learn-more {
+        margin-top: -280px;
+        height: 70px;
+    }
 }
 #family {
     background-color: rgb(13, 13, 13);
@@ -673,10 +685,11 @@ form button:hover {
 .form-submit:active {
     scale: 0.95;
 }
+
 .modal-body form input {
     border:none;
     border-bottom: 1px solid black;
-    width:35vh;
+    width:100%;
     height:50px;
     background-color: #161616;
     color: white;
@@ -749,6 +762,11 @@ form button:hover {
 }
 
 @media screen and (max-width: 800px) {
+    .modal-body {
+        height:80vh;
+        
+        
+    }
     .nav {
         opacity: 1;
     }
@@ -781,7 +799,7 @@ form button:hover {
     }
     .slogon {
         text-align: center;
-        padding-left: 40vh;
+        padding-left: 30vh;
     }
     .depart-c {
         flex-direction: column;
@@ -1503,6 +1521,10 @@ thead tr {
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
+ 
+    z-index:20;
+    filter: drop-shadow(0px 5px 10px  rgba(0, 0, 0, 0.386));
+    -webkit-filter: drop-shadow(0px 5px 10px  rgba(0, 0, 0, 0.386));
 }
 .logo-main:hover {
     scale: 1.04;
@@ -1513,3 +1535,19 @@ thead tr {
         text-align: center;
     }
 }
+/*JUST FOR PRACTICE*/
+#wrong-email,#wrong-pass {
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+    border-radius: 8px 8px 0px 8px;
+    -webkit-border-radius: 8px 8px 0px 8px;
+    -moz-border-radius: 8px 8px 0px 8px;
+    -ms-border-radius: 8px 8px 0px 8px;
+    -o-border-radius: 8px 8px 0px 8px;
+    padding:2px;
+}
+
+
+
+/*JUST FOR PRACTICE*/

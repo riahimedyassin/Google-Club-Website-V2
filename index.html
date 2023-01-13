@@ -13,6 +13,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/jpg" href="icons/logo.ico" />
+    
 </head>
 
 
@@ -33,20 +34,27 @@
                   </button>
             </div>
           </nav>
+          <!-- LOGIN MODAL -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <div class="">
                     <h2>Login</h2>
-                    <form action="" method="post" class="d-flex justify-content-center flex-column">
+                    <form  method="post" class="d-flex justify-content-center flex-column" onsubmit="return login()">
                         <div>
                             <p>Username</p>
-                            <input type="email" name="mail" id="" required placeholder="Type your username">
+                            <input type="text" name="mail" id="email" placeholder="Type your username">
+                            <!-- JUST FOR PRACTICE -->
+                            <div id="wrong-email"></div>
+                            <!-- JUST FOR PRACTICE -->
                         </div>
                         <div>
                             <p>Password</p>
-                            <input type="password" placeholder="Type your password">
+                            <input type="password" id="password" placeholder="Type your password">
+                            <!-- JUST FOR PRACTICE -->
+                            <div id="wrong-pass"></div>
+                            <!-- JUST FOR PRACTICE -->
                         </div>
                         <button type="submit">Login</button>
                         <div class="d-flex justify-content-center pt-5 ">
@@ -60,19 +68,22 @@
               </div>
             </div>
           </div>
+           <!-- LOGIN MODAL -->
+           <!-- BACKGROUND SHAPES -->
           <div class="rect-red show-rect rect"></div>
           <div class="rect-green show-rect rect"></div>
           <div class="rect-blue show-rect rect"></div>
           <div class="rect-red-2 show-rect rect"></div>
+           <!-- BACKGROUND SHAPES -->
         <section>
             <div>
               <div class="d-flex justify-content-center" style="margin-bottom: -350px;margin-top: 40px;">
                 <img src="images/logo.png" alt="" class="logo-main">
               </div>
-              <div class="d-flex justify-content-center">
-                <h1 style="margin-bottom: -320px;margin-top: 320px;">Google Club ISET Charguia</h1>
+              <div class="d-flex justify-content-center" style="margin-bottom: -320px">
+                <h1 style="margin-top: 320px;">Google Club ISET Charguia</h1>
               </div>
-                <div class="d-flex justify-content-center slogon align-items-center">
+                <div class="d-flex justify-content-center slogon align-items-center" style="display: block;margin-top: 100px;">
                     <div class="rect-yellow d-flex align-items-center " >
                         <h2>
                         #Why_you_follow_when_you_can_lead
@@ -117,7 +128,7 @@
             
             <div class="d-flex justify-content-around depart-c" style="margin-bottom:200px;">
                 <div >
-                    <div class="wrapper ">
+                    <div class="wrapper "style="margin:20px">
                         <div class="card red-yellow">
                             <img src="images/communication.png" alt="" style="width: 15%;">
                           <h3>
@@ -127,7 +138,7 @@
                       </div>
                 </div>
                 <span class="depart"></span>
-                <div class="wrapper ">
+                <div class="wrapper "style="margin:20px">
                     <div class="card blue-red">
                         <img src="images/GDevs.png" alt="" style="width: 20%;">
                       <h3>
@@ -135,7 +146,7 @@
                       </h3>
                     </div>
                   </div>
-                  <div class="wrapper ">
+                  <div class="wrapper "style="margin:20px">
                     <div class="card green-blue">
                       <img src="images/meet.png" alt="" style="width: 15%;">
                       <h3>
@@ -154,20 +165,20 @@
             <div class="d-flex justify-content-around ">
                 <h1 style="padding: 50px;margin-top: 50px;">News</h1>
             </div>
-            <div class="d-flex justify-content-center news-media m-2 ">
-                <div class='banner-1'>
+            <div class="d-flex justify-content-center news-media   ">
+                <div class='banner-1' style="margin:15px">
                     <div class='info-1'>
                       <h2 class='title'>Introduction to Crypto</h2>
                       <p class='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse corporis, velit porro impedit laudantium accusamus! Id velit, illum magni rem mollitia blanditiis iste maiores optio ipsa, est dolorem fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse corporis, velit porro impedit laudantium accusamus! Id velit, illum magni rem mollitia blanditiis iste maiores optio ipsa, est dolorem fugit.</p>
                     </div>
                   </div>
-                  <div class='banner-2'>
+                  <div class='banner-2' style="margin:15px">
                     <div class='info-2 '>
                       <h2 class='title'>Google Magazine</h2>
                       <p class='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse corporis, velit porro impedit laudantium accusamus! Id velit, illum magni rem mollitia blanditiis iste maiores optio ipsa, est dolorem fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse corporis, velit porro impedit laudantium accusamus! Id velit, illum magni rem mollitia blanditiis iste maiores optio ipsa, est dolorem fugit.</p>
                     </div>
                   </div>
-                  <div class='banner-3'>
+                  <div class='banner-3' style="margin:15px">
                     <div class='info-3'>
                       <h2 class='title'>Formation L</h2>
                       <p class='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse corporis, velit porro impedit laudantium accusamus! Id velit, illum magni rem mollitia blanditiis iste maiores optio ipsa, est dolorem fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse corporis, velit porro impedit laudantium accusamus! Id velit, illum magni rem mollitia blanditiis iste maiores optio ipsa, est dolorem fugit.</p>
@@ -289,6 +300,9 @@
             </div>
         </footer>
         <script src="animation.js"></script>
+         <!-- JUST FOR PRACTICE -->
+        <script src="control.js"></script>
+         <!-- JUST FOR PRACTICE -->
       </div>
     </div>
 </body>
