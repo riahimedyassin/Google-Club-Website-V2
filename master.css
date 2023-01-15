@@ -1554,6 +1554,18 @@ thead tr {
     -o-border-radius: 8px 8px 0px 8px;
     padding:2px;
 }
+@media screen and (max-width:800px){
+    .responsive-order .winner {
+        order: 1;
+    }
+    .responsive-order .second {
+        order:2
+    }
+    .responsive-order .third {
+        order: 3;
+    }
+
+}
 
 
 
