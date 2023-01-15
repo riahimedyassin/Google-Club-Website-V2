@@ -61,6 +61,7 @@ body {
     background-size: cover;
     
 }
+
 section {
     background-color: transparent;
 }
@@ -799,7 +800,7 @@ form button:hover {
     }
     .slogon {
         text-align: center;
-        padding-left: 30vh;
+        padding-left: 100vw;
     }
     .depart-c {
         flex-direction: column;
@@ -817,10 +818,15 @@ form button:hover {
         width: 100%;
     }
     .rect-yellow {
-        margin-top: 250px;margin-left:20%;
+        margin-top: 250px;
+        
     }
+
     .rect-yellow {
-        margin-left: -70vh;
+        margin-left: -60vh;
+    }
+    .rect-yellow h2 {
+        font-size: 20px;
     }
 }
 
@@ -1087,7 +1093,8 @@ article h3 {
         align-self: center;
     }
     .navbar-brand {
-        margin-left: -30%;
+        margin-left: -50%;
+        padding-right:20px ;
     }
     .free {
         width: 100%;
